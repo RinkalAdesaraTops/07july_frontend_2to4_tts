@@ -1,0 +1,26 @@
+
+        /* 3 selectors - tagname,classname,id */
+        /* tagname */
+        h4{
+            color:salmon;
+            background-color: blanchedalmond;
+            font-size: 35px;
+        }
+        /* id name */
+        #txt{
+            color:chartreuse;
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+        /* classname */
+        .box{
+            height: 300px;
+            width: 400px;
+            background-color: chocolate;
+            border:29px double red;
+            /* border-width: 2px;
+            border-color: rebeccapurple;
+            border-style: solid dotted dashed double; */
+            /* display: block; */
+        }
