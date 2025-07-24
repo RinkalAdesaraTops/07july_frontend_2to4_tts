@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 200px;
+            border: 2px solid black;
+            /* single value -- T B L R */
+            /* padding:10px; */
+            /*2 values - TB LR */
+            /* padding:10px 5px; */
+        /*4 values - T    R    B   L */
+            /* padding: 10px 5px 7px 4px; */
+        /*4 values - T    R    B   L-same as right */
+            padding: 10px 5px 7px;
+            float: left;
+            margin: 10px;
+           
+        }
+        .fr{
+            float: right;
+        }
+        .cb{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat assumenda </div>
+    <div class="box fr">RIght Side ipsum dolor, sit amet consectetur adipisicing elit. Placeat assumenda </div>
+    <div class="box">jkorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat assumenda </div>
+    <div class="cb">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt fugit et eveniet maxime architecto odit laborum quaerat reprehenderit vel? Iure rerum ratione quae harum et, exercitationem eveniet nihil voluptates perspiciatis!</p>
+    </div>
+</body>
+</html>
