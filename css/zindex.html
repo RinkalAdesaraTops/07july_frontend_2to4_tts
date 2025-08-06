@@ -4,6 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            border:2px solid black
+        }
+        .b1{
+            position: absolute;
+            background-color: blue;
+            z-index: 2;
+
+        }
+        .b2{
+            position: absolute;
+            top:30px;
+            left:30px;
+            background-color: yellow;
+            z-index: 3;
+        }
+        .b3{
+            z-index: 1;
+            position: absolute;
+            top:80px;
+            left:80px;
+            background-color: plum;
+        }
+    </style>
 </head>
 <body>
     <div class="box b1">1</div>
