@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: aquamarine;
+            border: 2px solid black;
+            margin:20px;
+            transition-duration: 5s;
+            transition-delay: 3s;
+        }
+        .box:hover{
+            /* transform: scale(2,2) scaleX(2) scaleY(3); */
+            /* transform:scaleY(3); */
+            /* transform:translate(10px,10px) translateX(80px) translateY(80px); */
+            transform:skewX(40deg);
+            background-color: red;
+            /* border-radius: 50%; */
+        }
+        .box1{
+            height: 30px;
+            width: 30px;
+            background-color: goldenrod;
+            border:2px solid black;
+            border-radius:50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- <div class="box1"></div> -->
+    </div>
+</body>
+</html>
