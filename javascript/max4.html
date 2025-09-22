@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // max-4 using nested if
+        let a = 560
+        let b = 34
+        let c = 78
+        let d = 67
+        document.write((a > b) ? ((a > c) ? ((a > d) ? '<br> A is max' : '<br>D is max') : ((c > d) ? '<br>C is max' : '<br>D is max')) : ((b > c) ? ((b > d) ? '<br>B is max' : '<br>D is max') : ((c > d) ? '<br>C is max' : '<br>D is max')))
+        /*if (a > b) {
+            if (a > c) {
+                if (a > d) {
+                    document.write('<br>A is maximum')
+                } else {
+                    document.write('<br>D is maximum')
+                }
+            } else {
+                if (c > d) {
+                    document.write('<br>C is maximum')
+                } else {
+                    document.write('<br>D is maximum')
+                }
+            }
+        } else {
+            if (b > c) {
+                if (b > d) {
+                    document.write('<br>B is maximum')
+                } else {
+                    document.write('<br>D is maximum')
+                }
+            } else {
+                if (c > d) {
+                    document.write('<br>C is maximum')
+                } else {
+                    document.write('<br>D is maximum')
+                }
+            }
+        } */
+    </script>
+</body>
+
+</html>

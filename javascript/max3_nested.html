@@ -7,23 +7,24 @@
 </head>
 <body>
     <script>
-        let a=56
-        let b=340
+        // max-3 using nested if
+        let a=560
+        let b=34
         let c=78
-        if(a>b){ 
-            if(a>c){
-                document.write('<br>A is maximum')
-            } else {
-                document.write('<br>C is maximum')
-            }
-        } else {
-            if(b>c){
-                document.write('<br>B is maximum')
-            } else {
-                document.write('<br>C is maximum')
-
-            }
-        }
+        document.write((a>b)?((a>c)?'<br> A is max':'<br> C is max'):((b>c)?'<br> B is max':'<br> C is max'))
+        // if(a>b){ 
+        //     if(a>c){
+        //         document.write('<br>A is maximum')
+        //     } else {
+        //         document.write('<br>C is maximum')
+        //     }
+        // } else {
+        //     if(b>c){
+        //         document.write('<br>B is maximum')
+        //     } else {
+        //         document.write('<br>C is maximum')
+        //     }
+        // }
     </script>
 </body>
 </html>
