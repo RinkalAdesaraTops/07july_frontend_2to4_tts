@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let no=452
+        let count=0
+        while(no>0){ //452>0 45>0 4>0 0>0
+            let r=no%10 //452%10= 2 45%10=5 4%10=4
+            no =Math.floor(no/10) //452/10=45 45/10=4 4/10=0
+            count++ //1 2 3
+        }
+        document.write('<br>Count no of digits are '+count)
+    </script>
+</body>
+</html>
