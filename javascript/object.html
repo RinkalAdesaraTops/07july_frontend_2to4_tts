@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object
+        let arr = {
+            "name":"abcd",
+            "age":25,
+            "salary":67000
+        }
+        // document.write('<br>Name is '+arr.name)
+        // document.write('<br>AGe is '+arr['age'])
+        for(let a in arr){
+            document.write('<br>'+a+" is "+arr[a])
+        }
+        arr.lastname = "xyz" //insert
+        document.write('<br><hr>')
+        for(let a in arr){
+            document.write('<br>'+a+" is "+arr[a])
+        }
+        delete arr.age //delete
+        arr.salary = 70000 //update
+        document.write('<br><hr>')
+        for(let a in arr){
+            document.write('<br>'+a+" is "+arr[a])
+        }
+    </script>
+</body>
+</html>
