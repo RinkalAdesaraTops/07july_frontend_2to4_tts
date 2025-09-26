@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1,2,3,4,5]
+        document.write('<br>'+arr)
+        document.write('<br>Total elements are '+arr.length)
+        arr.push(11,22,33)
+        document.write('<br>'+arr)
+        arr.pop()
+        document.write('<br>'+arr)
+        arr.unshift(100,200,300)
+        document.write('<br>'+arr)
+        arr.shift()
+        document.write('<br>'+arr)
+        arr.splice(3,0,25,55,66,58)
+        document.write('<br>'+arr)
+        arr.splice(2,2)
+        document.write('<br>'+arr)
+        let arr1 = arr.slice(4)
+        document.write('<br>'+arr1)
+    </script>
+</body>
+</html>
