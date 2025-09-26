@@ -9,9 +9,10 @@
     <script>
         // no=563 //365
         //121 //121 = same -- Palindrom no
-        let no = 121
+        let no = 120
         let rev=0
         let f=no
+        no = Math.abs(no);
         while(no>0){
             let r=no%10 //563%10 = 3 3*10 +6 = 36 36*10 +5 = 365
             rev = (rev*10) + r

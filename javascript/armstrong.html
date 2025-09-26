@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // armstrong no - 153
+        //1^3 + 5^3 + 3^3
+        //1+125+27 = 153
+        let no=1634  //no.length = 4
+        let sum=0
+        let f=no
+        let len = no.toString().length
+        while(no>0){
+            let r=no%10
+            sum = sum + (r**len)
+            no = Math.floor(no/10)
+        }
+        document.write('<br>Sum '+sum)
+        if(f == sum){
+            document.write('<br>Armstrong no')
+        } else {
+            document.write('<br>Not Armstrong no')
+        }
+    </script>
+</body>
+</html>
