@@ -24,6 +24,21 @@
         document.write('<br>'+arr)
         let arr1 = arr.slice(4)
         document.write('<br>'+arr1)
+        arr1 = arr.slice(4,8)
+        document.write('<br>'+arr1)
+        arr1 = arr.slice(-8,-2)
+        document.write('<br>'+arr1)
+        arr1 = arr.includes(580)
+        document.write('<br>'+arr1)
+        arr = [45,56,43,200,10,8,70]
+        //8 10 43 45 56 70 200
+        // arr = ["xgf","apple","jkl","yhgy","hij"]
+        // compare function
+        //a=45 b=56 
+        document.write('<br>Sorting '+arr.sort(function(a,b){
+                    return b-a //45-56 = 56-43 = 
+        }))
+        document.write('<br>Sorting '+arr.reverse())
     </script>
 </body>
 </html>

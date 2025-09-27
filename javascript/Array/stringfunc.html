@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "    hI hello  hi how are you? Hi  "
+        document.write('<br>length is '+str.length)
+        document.write('<br>Uppercase '+str.toUpperCase())
+        document.write('<br>Lowercase '+str.toLowerCase())
+        str2 = str.slice(3)
+        document.write('<br>'+str2)
+        document.write('<br>'+str.length)
+        // trim() trimStart() trimEnd()
+        document.write('<br>'+str.trim().length)
+        document.write('<br>'+str.trimStart().length)
+        document.write('<br>'+str.trimEnd().length)
+        
+        //padStart & padEnd()
+        let n= "356"
+        let r = n.padStart(6,"Rs") //RsR356
+        document.write('<br>'+r)
+        r = n.padEnd(6,"Rs") //RsR356
+        document.write('<br>'+r)
+    </script>
+</body>
+</html>
