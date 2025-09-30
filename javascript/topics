@@ -1,0 +1,32 @@
+what is js?
+types of js
+let var & const
+operators
+if_else elseif nestedif
+switch
+while,do_while & for loop
+array
+for_of & for_in loop
+array_func
+string _func
+DOM
+BOM
+UDF
+arrow function
+spreading,merging & destructuring & rest of operator 
+===========================================
+object
+object destructuring
+map,filter advance func
+eventListener
+High order function
+callback-hell-promises-async-await
+exception 
+oops
+1)class - object
+2)inheritance 
+3)polymorphism
+4)data abstraction & encapsulation
+constructor - 2 types - default & parameterized 
+validation js
+localstorage crud

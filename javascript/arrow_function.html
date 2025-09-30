@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Arrow function
+        const add = () => {
+            let a = 35
+            let b = 20
+            document.write('<br>Addition is ' + (a + b))
+        }
+        //fat arrow function
+        let mult = (a, b) => document.write('<br>Multiply is ' + (a * b))
+        const pi = 3.14
+        let r = 6.5
+        var area = () => pi * r ** 2
+        const cube = a => a ** 3
+        add()
+        mult(50, 2)
+        let ans = area()
+        document.write('<br>Answer is ' + area())
+        document.write('<br>Cube is ' + cube(5))
+    </script>
+</body>
+
+</html>

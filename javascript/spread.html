@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [10,20,33,44,50]
+        let arr2 = [100,200,300]
+        // spread operator -- ...
+        //we can fetch all elements using ...
+        let merge_arr = [...arr,...arr2]
+        //Merging
+        document.write('<br>Merge array is '+merge_arr)
+        // [10,20,33,44,50,100,200,300]
+        // destructuring
+        // const [a,b,c,x,y,z,j,k] = merge_arr
+        // ... - rest of operator
+        // [10,20,33,44,50,100,200,300]
+        const [a,b,c,...j] = merge_arr
+        document.write('<br>'+a)
+        document.write('<br>'+b)
+        document.write('<br>'+c)
+        document.write('<br>'+j)
+    </script>
+</body>
+</html>
