@@ -7,28 +7,43 @@
 </head>
 <body>
     <script>
-        // object
-        let arr = {
-            "name":"abcd",
+        // let arr = [10,"gfhfgh","dgfdg","fdgtreiu"]
+        let obj = {
+            "name":"test123",
             "age":25,
-            "salary":67000
+            "salary":35000,
+            "disp":function(){
+                    return this.name+"---"+this.age
+            },
+            //getter method - get
+            get dispSalary(){
+                return this.salary
+            },
+            //setter method - set
+            set changeSalary(a){
+                this.salary = a
+            }
         }
-        // document.write('<br>Name is '+arr.name)
-        // document.write('<br>AGe is '+arr['age'])
-        for(let a in arr){
-            document.write('<br>'+a+" is "+arr[a])
-        }
-        arr.lastname = "xyz" //insert
+        document.write('<br>Name & Age is '+obj.disp())
+        document.write('<br>Salary is '+obj.dispSalary)
+        obj.changeSalary = 50000
+        document.write('<br>Updated Salary is '+obj.dispSalary)
+        // document.write('<br>Name is '+obj.name)
+        // document.write('<br>Age is '+obj['age'])
         document.write('<br><hr>')
-        for(let a in arr){
-            document.write('<br>'+a+" is "+arr[a])
-        }
-        delete arr.age //delete
-        arr.salary = 70000 //update
+        obj.lastname = "xyz" //insert
+        // for_of -- array
+        // for_in -- object
+        // for(var a in obj){
+        //     document.write('<br>'+a+" is "+obj[a])
+        // }
+        delete obj.age //delete
         document.write('<br><hr>')
-        for(let a in arr){
-            document.write('<br>'+a+" is "+arr[a])
-        }
+        obj.salary = 55000 //update
+        obj.position = "Manager"
+        // for(var a in obj){
+        //     document.write('<br>'+a+" is "+obj[a])
+        // }
     </script>
 </body>
 </html>
