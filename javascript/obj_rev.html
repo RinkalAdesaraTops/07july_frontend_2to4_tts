@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let emp = {
+            "id":111,
+            name:"abcd",
+            age:26,
+            salary:45000,
+            disp:function(){
+                return this.name +"---"+this.salary
+            },
+            //getter method
+            get dispAge(){
+                return this.age
+            },
+            //setter method
+            set changeAge(i){
+                this.age =i
+            }
+        }
+        const {name,salary} = emp
+        document.write('<br>Name is '+name)
+        document.write('<br>Salary is '+salary)
+        // document.write('<br>Name & Salary is '+emp.disp())
+        // document.write('<br>AGe is '+emp.dispAge)
+        // emp.changeAge = 35
+        // document.write('<br>AGe is '+emp.dispAge)
+
+        // document.write('<br>Id is '+emp.id)
+        // document.write('<br>Name is '+emp["name"])
+        // document.write('<br><hr>')
+        // for(var a in emp){
+        //     document.write('<br>'+a+" is "+emp[a])
+        // }
+        // emp.lastname = "xyz" //insert
+        // emp.age = 35 //update
+        // delete emp.salary //delete
+        // document.write('<br><hr>')
+        // for(var a in emp){
+        //     document.write('<br>'+a+" is "+emp[a])
+        // }
+    </script>
+</body>
+</html>

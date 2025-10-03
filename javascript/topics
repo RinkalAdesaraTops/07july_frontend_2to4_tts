@@ -9,14 +9,14 @@ array
 for_of & for_in loop
 array_func
 string _func
-DOM
-BOM
-UDF
+UDF - 4 types
 arrow function
 spreading,merging & destructuring & rest of operator 
-===========================================
 object
 object destructuring
+===========================================
+DOM 
+BOM 
 map,filter advance func
 eventListener
 High order function

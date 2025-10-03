@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+    <button onclick="add()">Add</button>
+    <button onclick="xyz()">Change</button>
+    <script>
+        document.getElementById('demo').innerHTML = "<b>Hello.....!!!</b>"
+        document.getElementById('demo1').innerText = "<b>Hello.....!!!</b>"
+        const add = () => {
+            document.getElementById('demo').style.color = "red"
+            document.getElementById('demo').style.backgroundColor = "yellowgreen"
+        }
+        const xyz = () => {
+            document.getElementById('demo').style.color = "blue"
+            document.getElementById('demo').style.backgroundColor = "aqua"
+        }
+    </script>
+</body>
+
+</html>
