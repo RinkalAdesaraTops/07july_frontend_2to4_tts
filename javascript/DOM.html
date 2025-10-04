@@ -12,6 +12,42 @@
     <div id="demo1"></div>
     <button onclick="add()">Add</button>
     <button onclick="xyz()">Change</button>
+    <br>
+    <hr>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ipsam, eius eaque corrupti, aliquid dolore
+        provident libero sint est aspernatur eos, obcaecati quae voluptatibus reprehenderit consequuntur vitae officiis
+        rerum! Laborum.</p>
+
+
+    <p class="abc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ipsam, eius eaque corrupti, aliquid dolore
+        provident libero sint est aspernatur eos, obcaecati quae voluptatibus reprehenderit consequuntur vitae officiis
+        rerum! Laborum.</p>
+
+
+    <p class="abc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ipsam, eius eaque corrupti, aliquid dolore
+        provident libero sint est aspernatur eos, obcaecati quae voluptatibus reprehenderit consequuntur vitae officiis
+        rerum! Laborum.</p>
+
+
+    <p class="abc"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ipsam, eius eaque corrupti, aliquid dolore
+        provident libero sint est aspernatur eos, obcaecati quae voluptatibus reprehenderit consequuntur vitae officiis
+        rerum! Laborum.</p>
+
+
+    <p class="abc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ipsam, eius eaque corrupti, aliquid dolore
+        provident libero sint est aspernatur eos, obcaecati quae voluptatibus reprehenderit consequuntur vitae officiis
+        rerum! Laborum.</p>
+
+
+    <p class="abc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime ipsam, eius eaque corrupti, aliquid dolore
+        provident libero sint est aspernatur eos, obcaecati quae voluptatibus reprehenderit consequuntur vitae officiis
+        rerum! Laborum.</p>
+
+        <hr>
+        <input type="checkbox" name="edu" id="edu">10th
+        <input type="checkbox" name="edu" id="edu">12th
+        <input type="checkbox" name="edu" id="edu">BCA
+        <input type="checkbox" name="edu" id="edu">MCA
     <script>
         document.getElementById('demo').innerHTML = "<b>Hello.....!!!</b>"
         document.getElementById('demo1').innerText = "<b>Hello.....!!!</b>"
@@ -23,6 +59,24 @@
             document.getElementById('demo').style.color = "blue"
             document.getElementById('demo').style.backgroundColor = "aqua"
         }
+        let a = document.getElementsByTagName("p")
+        for (let i = 0; i < a.length; i++) {
+            if (i % 2 == 0) {
+                a[i].style.color = "yellowgreen"
+            } else {
+                a[i].style.color = "green"
+            }  
+        }
+        let b = document.getElementsByClassName("abc")
+        // for(var x in b)
+        // {
+        //     b[x].style.color = "brown"
+        // }
+        document.getElementsByName("edu")[0].checked = true
+        document.getElementsByName("edu")[2].checked = true
+        // a[0].style.color = "purple"
+        // console.log(a);
+        // document.getElementsByTagName("p")[1].style.color = "purple"
     </script>
 </body>
 
