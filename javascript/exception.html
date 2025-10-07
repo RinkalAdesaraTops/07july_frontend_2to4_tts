@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //error - system generated 
+        //user generated error - exception
+        //exception handling - try_catch& finally block
+        let a=35
+        let b=5
+        try{
+            //error generate
+            if(b>0){
+                document.write('<br>Division is '+(a/b)) 
+            } else {
+                throw "Division is not possible with zero"
+            }
+        } catch(e){
+            //solution
+            document.write('<br>Error msg is -- '+e)
+        } finally{
+            //always code executed
+            document.write('<br>Addition is '+(a+b))
+        }
+    </script>
+</body>
+</html>

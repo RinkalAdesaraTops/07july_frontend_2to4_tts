@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo">HIii</div>
+    <!-- <div id="txt"></div> -->
+    <hr>
+    <span id="hours">00</span>:
+    <span id="min">00</span>:
+    <span id="txt">00</span>
+    <script>
+        setTimeout(() => {
+            document.getElementById('demo').innerHTML = "Hello"
+        }, 3000)
+        document.write('<br>Addition is ' + (25 + 45))
+        let count = 0
+        let min=0
+        let h=0
+        setInterval(() => {
+            document.getElementById('txt').innerHTML = count++
+            if(count>10){
+                document.getElementById('min').innerHTML = ++min
+                count=0
+                if(min>5){
+                    document.getElementById('hours').innerHTML = ++h
+                    min=0
+                }
+            }
+        }, 500)
+    </script>
+</body>
+
+</html>
