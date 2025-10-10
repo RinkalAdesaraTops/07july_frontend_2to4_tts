@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //custom high order function
+        const isEven = (i)=>{
+            return i%2==0 //i=24 true i=25 false
+        }
+        const hof = (f,n)=>{
+            let ans = f(n)
+            if(ans){
+                document.write('<br>It is even no')
+            } else {
+                document.write('<br>It is odd no')
+            }
+        }
+        hof(isEven,22)
+    </script>
+</body>
+</html>

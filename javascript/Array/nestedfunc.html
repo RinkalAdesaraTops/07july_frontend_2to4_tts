@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //callback hell problem - solution -- async-await/promises
+        // nested function 
+        const add = async()=>{
+            await minus()
+        }
+        const minus = ()=>{
+            division()
+        }
+        const division=()=>{
+            hkjfkghj
+            mult()
+        }
+        const mult = ()=>{
+            console.log('mult called...');          
+        }
+        async function test1(){
+            await abc()
+        }
+        
+        add()
+    </script>
+</body>
+</html>

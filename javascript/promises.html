@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // promises
+        //pending
+        //fulfilled/resolved
+        //rejected/cancelled
+        let age = 16
+        const pr = new Promise((rs, rj) => {
+            // rs("promises completed")
+            if (age >= 18) {
+                rs("Eligible for vote")
+            } else {
+                rs("not Eligible for vote")
+            }
+            // rj("promises rejected")
+        }).then((msg) => console.log(msg))
+            .catch((msg) => console.log("error is " + msg))
+    </script>
+</body>
+
+</html>

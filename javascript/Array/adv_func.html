@@ -7,12 +7,12 @@
 </head>
 <body>
     <script>
-        let arr = [10,20,30,40,50,20]
-        // map function - 
+        let arr = [10,20,34,40,50]
+        // map function  
         // it doesnot change original array, 
         // create copy of array
-        let res = arr.map((i,index)=>{
-                    return i*2
+        let res = arr.map((a)=>{
+            return a*2
         })
         document.write('<br>'+arr)
         document.write('<br>'+res)
@@ -32,9 +32,37 @@
         // reduce- reduceRight function
         //[10,20,35,40,50,20] - i prev value, j-next value
         let total = arr.reduce((i,j)=>{
-                return i+j //10+20 = 30 i=30 j=35
-        })
+            console.log("i is "+i);
+            console.log("j is "+j);
+            return i+j //10+20 = 30 i=30 j=35
+        },100) //initial value
         document.write('<br>Total is '+total)
+        let arr2 = [34,45,23,2,66,54]
+        let max = arr2.reduce((i,j)=>{
+            if(i<j){ //34<45
+               i=j //i=45 j=66 i=66 j=54
+            }
+            return i
+        })
+        document.write('<br>Maximum is '+max)
+        
+        /*{
+            "abc":3,
+            "xyz":2,
+            "pqr":1,
+            "tyr":1
+        }*/
+       arr = ["abc","xyz","abc","pqr","abc","try","xyz"]
+       result = arr.reduce((i,j)=>{
+                //i={} j=abc
+                if(!i[j]){
+                    i[j] = 1 
+                } else {
+                    i[j]++
+                }
+                return i
+       },{})
+       console.log(result);     
     </script>
 </body>
 </html>
