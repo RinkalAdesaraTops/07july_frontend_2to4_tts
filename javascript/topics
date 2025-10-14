@@ -21,8 +21,9 @@ exception
 map,filter advance func
 High order function
 callback-hell-promises-async-await
+localstorage crud
+validation js
 =======================================
-
 
 oops
 1)class - object
@@ -30,5 +31,4 @@ oops
 3)polymorphism
 4)data abstraction & encapsulation
 constructor - 2 types - default & parameterized 
-validation js
-localstorage crud
+
