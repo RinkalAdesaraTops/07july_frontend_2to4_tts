@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class abc { //parent/base/super class
+            constructor() {
+                console.log('parent class constructor called.');
+            }
+            // dispA(){
+            //     console.log('parent class function called.');
+            // }
+            disp(){
+                console.log('parent class function called.');
+            }
+        }
+        class xyz extends abc {  //child/derived/sub class
+            constructor() {
+                super()
+                console.log('child class constructor called.');
+            }
+            // dispB(){
+            //     console.log('child class function called.');
+            // }
+            disp(){
+                super.disp()
+                console.log('child class function called.');
+            }
+        }
+        let x1 = new xyz()
+        x1.disp()
+        // x1.dispA()
+        // x1.dispB()
+    </script>
+</body>
+
+</html>

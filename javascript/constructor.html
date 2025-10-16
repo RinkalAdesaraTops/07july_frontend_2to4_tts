@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class user{
+            // parameterized constructor
+            constructor(a,b){
+                this.userid = a
+                this.username = b
+            }
+            getData(){
+                return this.userid+"---"+this.username
+            }
+        }
+        let u1 = new user(101,"Abcd")
+        document.write('<br>UserId and Name are '+u1.getData())
+        
+    </script>
+</body>
+</html>

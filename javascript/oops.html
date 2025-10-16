@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object oriented programming
+        // class - object
+        //inheritance
+        //polymorphism
+        //data abstraction - data hiding
+        //  & encapsulation - wrapping up of data into single unit
+        //constructor
+        class abc{
+            //default constructor
+            constructor(){ //special member function
+                //automatically called when object is created
+                this.name = "test"
+                this.age = 25
+                this.salary = 45000
+            }
+            disp(){
+                document.write('<br>Name is '+this.name)
+                document.write('<br>Age is '+this.age)
+                document.write('<br>Salary is '+this.salary)
+            }
+        }
+        let a1 = new abc()
+        a1.disp()
+    </script>
+</body>
+</html>
