@@ -1,0 +1,7 @@
+npm init
+npm install create-react-app
+npx create-react-app projectname
+
+error- npm.ps1 , npx.ps1 - delete from folder
+npm start
+
