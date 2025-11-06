@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <h3>LIfecycle Example</h3>
-      {/* <ClassExample myname="test" /> */}
-      <LifecycleFunction />
+      <ClassExample myname="test" />
+      {/* <LifecycleFunction /> */}
     </>
   )
 }
