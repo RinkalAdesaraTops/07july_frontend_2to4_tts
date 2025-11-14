@@ -21,6 +21,10 @@ const EmpComponent = () => {
     e.preventDefault();
     setAllData([...alldata, data]);
   };
+  const delData = (id)=>{
+    let res = alldata.filter((i,index)=> index != id)
+    setAllData(res)
+  }
   return (
     <div>
       <h3>Employee Add</h3>
@@ -78,7 +82,7 @@ const EmpComponent = () => {
                 <td>{i.name}</td>
                 <td>{i.age}</td>
                 <td>{i.salary}</td>
-                <td>Delete</td>
+                <td><button onClick={()=>delData(index)}>Delete</button></td>
               </tr>
             );
           })}
