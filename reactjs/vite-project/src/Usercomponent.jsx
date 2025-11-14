@@ -33,7 +33,6 @@ const Usercomponent = () => {
         // }
       ]);
     }
-
     setName("");
     setAge("");
     setSalary("");

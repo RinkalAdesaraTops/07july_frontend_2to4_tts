@@ -3,16 +3,20 @@ import { useState } from 'react'
 import ClassExample from './ClassExample'
 import LifecycleFunction from './LifecycleFunction'
 import Usercomponent from './Usercomponent'
+import PropExample from './PropExample'
+import EmpComponent from './EmpComponent'
 
 function App() {
+  
   return (
     <>
       {/* <h3>LIfecycle Example</h3> */}
       {/* <ClassExample myname="test" /> */}
       {/* <LifecycleFunction /> */}
-      <Usercomponent />
+      {/* <Usercomponent /> */}
+      {/* <PropExample /> */}
+      <EmpComponent />
     </>
   )
 }
-
 export default App

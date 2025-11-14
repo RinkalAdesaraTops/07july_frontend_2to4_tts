@@ -12,3 +12,13 @@ module css - how can we use it
 what is diff b/w external css & module css
 styled component
 ----------------------------------
+SPA vs Traditional web app
+default props in destructuring({myname="dffgh",myage=52})  &
+componentName.defaultProps = {
+    myname:"TETST",
+    myage:"45"
+
+} 
+
+=================================================
+propTypes 
