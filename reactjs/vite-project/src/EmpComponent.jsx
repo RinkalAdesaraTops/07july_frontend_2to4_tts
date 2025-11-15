@@ -7,6 +7,7 @@ const EmpComponent = () => {
     salary: "",
   });
   const [alldata, setAllData] = useState([]);
+  const [id, setId] = useState("");
   const handleChange = (e) => {
     let { name, value } = e.target;
     // let nm = e.target.name
@@ -19,12 +20,34 @@ const EmpComponent = () => {
   };
   const saveData = (e) => {
     e.preventDefault();
-    setAllData([...alldata, data]);
+    if (id != "") {
+      let res = alldata.map((i,index)=> (index == id)? i = data : i)
+      // let res = alldata.map((i, index) => {
+      //   if (index == id) {
+      //     i = data;
+      //   }
+      //   return i;
+      // });
+      setAllData(res);
+    } else {
+      setAllData([...alldata, data]);
+    }
+    setId("");
+    setData({
+      name: "",
+      age: "",
+      salary: "",
+    });
   };
-  const delData = (id)=>{
-    let res = alldata.filter((i,index)=> index != id)
-    setAllData(res)
-  }
+  const delData = (id) => {
+    let res = alldata.filter((i, index) => index != id);
+    setAllData(res);
+  };
+  const editData = (id) => {
+    let res = alldata.find((i, index) => index == id);
+    setData(res);
+    setId(id);
+  };
   return (
     <div>
       <h3>Employee Add</h3>
@@ -82,7 +105,10 @@ const EmpComponent = () => {
                 <td>{i.name}</td>
                 <td>{i.age}</td>
                 <td>{i.salary}</td>
-                <td><button onClick={()=>delData(index)}>Delete</button></td>
+                <td>
+                  <button onClick={() => editData(index)}>Edit</button>
+                  <button onClick={() => delData(index)}>Delete</button>
+                </td>
               </tr>
             );
           })}
