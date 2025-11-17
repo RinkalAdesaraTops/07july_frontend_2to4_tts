@@ -5,6 +5,7 @@ import LifecycleFunction from './LifecycleFunction'
 import Usercomponent from './Usercomponent'
 import PropExample from './PropExample'
 import EmpComponent from './EmpComponent'
+import ApiExample from './ApiExample'
 
 function App() {
   
@@ -15,7 +16,8 @@ function App() {
       {/* <LifecycleFunction /> */}
       {/* <Usercomponent /> */}
       {/* <PropExample /> */}
-      <EmpComponent />
+      {/* <EmpComponent /> */}
+      <ApiExample />
     </>
   )
 }
