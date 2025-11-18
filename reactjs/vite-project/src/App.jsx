@@ -6,6 +6,7 @@ import Usercomponent from './Usercomponent'
 import PropExample from './PropExample'
 import EmpComponent from './EmpComponent'
 import ApiExample from './ApiExample'
+import ApiCrudExample from './ApiCrudExample'
 
 function App() {
   
@@ -17,7 +18,8 @@ function App() {
       {/* <Usercomponent /> */}
       {/* <PropExample /> */}
       {/* <EmpComponent /> */}
-      <ApiExample />
+      {/* <ApiExample /> */}
+      <ApiCrudExample />
     </>
   )
 }

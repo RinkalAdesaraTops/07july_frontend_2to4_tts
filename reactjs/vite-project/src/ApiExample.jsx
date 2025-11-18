@@ -4,7 +4,7 @@ const ApiExample = () => {
   const [userdata, setUserdata] = useState([]);
   useEffect(() => {
     axios.get("https://fakestoreapi.com/users")
-        .then((res)=>console.log(res))
+        .then((res)=>setUserdata(res.data))
     // fetch("https://fakestoreapi.com/users")
     //   .then((response) => response.json())
     //   .then((data) => setUserdata(data))
