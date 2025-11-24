@@ -1,0 +1,7 @@
+what is react js?
+state & props diff
+lifecycle 
+class & function component diff
+useState & useEffect hooks
+axios package methods 
+why we can use Json-server?
