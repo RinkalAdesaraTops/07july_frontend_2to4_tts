@@ -3,6 +3,8 @@ import './App.css';
 import { Fragment } from 'react/jsx-runtime';
 import Firstcomponent from './Firstcomponent';
 import Secondcomponent from './Secondcomponent';
+import Usercomponent from './Usercomponent';
+import ApiCrud from './ApiCrud';
 // jsx 
 function App() {
   let a=20
@@ -12,7 +14,9 @@ function App() {
   let salary = 25000
   return (
     <>
-    <Secondcomponent myname={name} myage="29" sal={salary}/>
+    {/* <Usercomponent /> */}
+    <ApiCrud />
+    {/* <Secondcomponent myname={name} myage="29" sal={salary}/> */}
     {/* // <React.Fragment> */}
     {/* <div>
       <h3>First React Project</h3>

@@ -12,5 +12,4 @@ const Secondcomponent = (props) => {
     </div>
   )
 }
-
 export default Secondcomponent
