@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // polymorphism 
+        class parent {
+            constructor() {
+                console.log('parent constructor called..');
+            }
+            disp() {
+                console.log('parent func called');
+
+            }
+        }
+        class child extends parent {
+            constructor() {
+                super()
+                console.log('child constructor called..');
+            }
+            disp() {
+                super.disp()
+                console.log('child func called');
+
+            }
+        }
+        let c1 = new child()
+        c1.disp()
+    </script>
+</body>
+
+</html>

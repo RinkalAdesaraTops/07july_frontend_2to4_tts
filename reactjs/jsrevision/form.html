@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .err {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="post" name="frm" onsubmit="return checkData()">
+        <label for="">Name:</label>
+        <input type="text" name="username" id="username">
+        <span class="err" id="errName"></span>
+        <br><br>
+        <label for="">Age:</label>
+        <input type="number" name="age" id="age">
+        <span class="err" id="errAge"></span>
+
+        <br><br>
+        <label for="">Email:</label>
+        <input type="text" name="email" id="email">
+        <span class="err" id="errEmail"></span>
+        <br><br>
+        <label for="">Password:</label>
+        <input type="password" name="pwd" id="pwd">
+        <span class="err" id="errPwd"></span>
+        <br><br>
+        <label for="">Gender:</label>
+        <input type="radio" name="g1" id="g1" value="male">Male
+        <input type="radio" name="g1" id="g2" value="female">Female
+        <span class="err" id="errGender"></span>
+
+        <br><br>
+        <input type="submit" value="Save">
+    </form>
+    <script>
+        const checkData = () => {
+            document.getElementById('errName').innerHTML = ''
+            document.getElementById('errAge').innerHTML = ''
+            document.getElementById('errEmail').innerHTML = ''
+            document.getElementById('errPwd').innerHTML = ''
+            document.getElementById('errGender').innerHTML = ''
+            let name = document.frm.username.value
+            let age = document.frm.age.value
+            let email = document.frm.email.value
+            let pwd = document.frm.pwd.value
+            let gender = document.frm.g1.value
+            let status = 0
+            let noPtn = /[0-9]/
+            if (name == '') {
+                document.getElementById('errName').innerHTML = "Please Enter name"
+                status = 1
+            } else if (name.length < 2 || name.length > 10) {
+                document.getElementById('errName').innerHTML = "Name must be 2 to 10 characters"
+                status = 1
+            } else if (noPtn.test(name)) {
+                document.getElementById('errName').innerHTML = "Digits are not allowed"
+                status = 1
+            }
+            if (age == '') {
+                document.getElementById('errAge').innerHTML = "Please Enter age"
+                status = 1
+            } else if (age < 18 || age > 100) {
+                document.getElementById('errAge').innerHTML = "Age must be 18 to 100 years"
+                status = 1
+            }
+            let emailPtn = /[A-Za-z0-9]@+[A-Za-z].+[A-Za-z]{2,3}/
+
+            if (email == '') {
+                document.getElementById('errEmail').innerHTML = "Please Enter email"
+                status = 1
+            } else if (!emailPtn.test(email)) {
+                document.getElementById('errEmail').innerHTML = "Enter valid email"
+                status = 1
+            }
+            let charPtn = /[A-Z]/
+            let charPtn1 = /[a-z]/
+            let specialPtn = /[@!#$%]/
+           
+            
+            if (pwd == '') {
+                document.getElementById('errPwd').innerHTML = "Please Enter password"
+                status = 1
+            } else if (pwd.length < 8) {
+                document.getElementById('errPwd').innerHTML = "Password must be 8 characters"
+                status = 1
+            } else if (!noPtn.test(pwd)) {
+                document.getElementById('errPwd').innerHTML = "Password must be atleast 1 digit"
+                status = 1
+            } else if (!charPtn.test(pwd)) {
+                document.getElementById('errPwd').innerHTML = "Password must be atleast 1 capital letter"
+                status = 1
+            }
+            else if (!charPtn1.test(pwd)) {
+                document.getElementById('errPwd').innerHTML = "Password must be atleast 1 small letter"
+                status = 1
+            } else if (!specialPtn.test(pwd)) {
+                document.getElementById('errPwd').innerHTML = "Password must be atleast 1 special character"
+                status = 1
+            }
+            if (gender == '') {
+                document.getElementById('errGender').innerHTML = "Please select any one gender"
+                status = 1
+            }
+
+
+            if (status == 0) {
+                return true
+            } else {
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>

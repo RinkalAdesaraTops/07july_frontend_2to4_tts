@@ -97,7 +97,8 @@ const ApiCrud = () => {
           </tr>
         </thead>
         <tbody>
-          {alldata.map((i, index) => {
+          {
+          alldata.map((i, index) => {
             return (
               <tr>
                 <td>{index + 1}</td>

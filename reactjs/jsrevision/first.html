@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1)class & object
+        class abc{
+            // parameterized constructor
+            constructor(a){
+                console.log("constructor called.");               
+                this.name = a
+            }
+            // default constructor
+            // constructor(){
+            //     console.log("constructor called.");               
+            //     this.name = "test"
+            // }
+            disp(){
+                console.log("Name is "+this.name);               
+            }
+        }
+        // data abstraction - data hiding
+        // encapsulation - wrapping up of data into single unit
+        let a1 = new abc("ABCD")
+        a1.disp()
+        
+    </script>
+</body>
+</html>
