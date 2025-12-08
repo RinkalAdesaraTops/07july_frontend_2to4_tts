@@ -9,6 +9,9 @@ import UseRefExample from './UseRefExample'
 import Test from './Test'
 import First from './First'
 import CrudExam from './CrudExam'
+import MemoExample from './MemoExample'
+import ApiExample from './ApiExample'
+
 function App() {
   return (
     <>
@@ -21,8 +24,11 @@ function App() {
     {/* <CrudComponent /> */}
     {/* <Test/> */}
     {/* <First /> */}
-    <CrudExam/>
+    {/* <CrudExam/> */}
+    {/* <MemoExample /> */}
+    <ApiExample />
     </>
   )
 }
 export default App
+
